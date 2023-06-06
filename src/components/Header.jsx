@@ -5,7 +5,7 @@ export default function Header() {
     <div>
         <div className='bg-nav-color h-16 pt-4 pl-4'>
         <div className='border w-32 text-center m-auto lg:m-0 '>
-        <p className='text-white text-xl'>MyTestApp</p>
+        <p className='text-white text-xl'>MyShowDB</p>
         </div>
       </div>
       <div className='h-hero bg-herobg pt-40 '>

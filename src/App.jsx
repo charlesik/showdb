@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-import Header from './components/Header'
-import Search from './components/Search'
-import Movies from './components/Movies'
+
+import { Route,Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import ShowDetails from './pages/ShowDetails'
 
 function App() {
 
   return (
-    <div>
-      <Header/>
-      {/* <Search/> */}
-      <Movies/>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="details/:id" element={<ShowDetails />} />
+    </Routes>
+  );
 }
 
 export default App
